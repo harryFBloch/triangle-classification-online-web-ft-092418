@@ -30,10 +30,10 @@ class Triangle
   def real_triangle?
 
     if self.side1 == 0 || self.side2 == 0 || self.side3 == 0
-      puts "Fail1 "
+      puts "Fail1 #{self.side1}, #{self.side2}, #{self.side3}"
         return false
     elsif self.side1 + self.side2 > self.side3 || self.side2 + self.side3 > self.side1
-    puts "Fail2"
+    puts "Fail2 #{self.side1}, #{self.side2}, #{self.side3}"
         return false
     else 
       return true
